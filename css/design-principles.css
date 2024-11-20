@@ -1,0 +1,43 @@
+.principles {
+    padding: var(--spacing-xlarge) 0;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-large);
+}
+
+.principle {
+    grid-column: span 6;
+}
+
+.principle-title {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+    color: var(--color-accent);
+}
+
+.principle-description {
+    font-size: var(--font-size-base);
+}
+/* Las variables CSS no funcionan directamente en las declaraciones @media */
+@media (max-width: 768px) {
+    .principles-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .principle {
+        grid-column: span 12;
+    }
+}
+/* Las variables CSS no funcionan directamente en las declaraciones @media */
+@media (max-width: 576px) {
+    .principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .principle {
+        grid-column: span 12;
+    }
+}

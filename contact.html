@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Design Furniture Store</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Design Furniture</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Productos</a></li>
+                    <li><a href="design-principles.html" class="nav-link">Principios de Diseño</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Contacto</h2>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3>Envíanos un mensaje</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="button">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
+                        <p><strong>Dirección:</strong> Calle Ejemplo, 123, 28001 Madrid</p>
+                        <p><strong>Teléfono:</strong> +34 912 345 678</p>
+                        <p><strong>Email:</strong> info@designfurniture.com</p>
+                        <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+                    </div>
+                    <div class="contact-map">
+                        <h3>Encuéntranos</h3>
+                        <div class="map-container">
+                            <!-- Aquí iría un mapa real, por ahora usamos un placeholder -->
+                            <img src="https://dummyimage.com/600x300/000/fff" alt="Mapa de ubicación" class="map-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Design Furniture Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
