@@ -2,7 +2,7 @@
   /* Colores */
   --color-primary: #3a3a3a;
   --color-secondary: #f0f0f0;
-  --color-accent: #ff6b6b;
+  --color-accent: #C80324;
   --color-text: #333333;
   --color-background: #ffffff;
 
@@ -19,6 +19,10 @@
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 4rem;
+
+  /* Altura mínima */
+  /* Calculamos el mínimo main restando cabecera y footer */
+  --min-height: calc(100vh - 182px);
 
   /* Breakpoints  -> nota: sin sentido en css 
   porque no tiene efecto en los mediaQuery a no ser que se utilicen prerpocesadores como Sass*/
@@ -37,7 +41,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.main{
+  min-height: var(--min-height);
+  }
 .container {
   width: 100%;
   max-width: 1200px;
@@ -57,7 +63,10 @@ body {
 }
 
 .button:hover {
-  background-color: darken(var(--color-accent), 10%);
+  background-color: darken(var(--color-accent), 30%);
+  color: var(--color-primary);
+  /* border: 1px solid var(--color-primary); // esto desplaza el botón */
+  box-shadow: 0 0 0 1px var(--color-primary);
 }
 
 /* Header */

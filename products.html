@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Design Furniture Store</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Design Furniture</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="products.html" class="nav-link">Productos</a></li>
+                    <li><a href="design-principles.html" class="nav-link">Principios de Diseño</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Nuestros Productos</h2>
+            </div>
+        </section>
+    
+        <div class="grid-container">
+            <aside class="sidebar">
+                <h2>Filtros</h2>
+                <form class="filter-form">
+                    <div class="filter-group">
+                        <h3>Categoría</h3>
+                        <label><input type="checkbox" name="category" value="sillas"> Sillas</label>
+                        <label><input type="checkbox" name="category" value="mesas"> Mesas</label>
+                        <label><input type="checkbox" name="category" value="sofas"> Sofás</label>
+                        <label><input type="checkbox" name="category" value="lamparas"> Lámparas</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Precio</h3>
+                        <label><input type="radio" name="price" value="0-100"> $0 - $100</label>
+                        <label><input type="radio" name="price" value="100-500"> $100 - $500</label>
+                        <label><input type="radio" name="price" value="500+"> $500+</label>
+                    </div>
+                    <button type="submit" class="button">Aplicar filtros</button>
+                </form>
+            </aside>
+    
+            <main class="main-content">
+                <div class="main-product-content">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="https://dummyimage.com/300x300/000/fff" alt="Silla Moderna" class="product-image">
+                            <h3 class="product-title">Silla Moderna</h3>
+                            <p class="product-price">$199.99</p>
+                            <button class="button">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://dummyimage.com/300x300/000/fff" alt="Mesa de Centro" class="product-image">
+                            <h3 class="product-title">Mesa de Centro</h3>
+                            <p class="product-price">$299.99</p>
+                            <button class="button">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://dummyimage.com/300x300/000/fff" alt="Lámpara de Pie" class="product-image">
+                            <h3 class="product-title">Lámpara de Pie</h3>
+                            <p class="product-price">$149.99</p>
+                            <button class="button">Añadir al carrito</button>
+                        </div>
+                        <div class="product-card">
+                            <img src="https://dummyimage.com/300x300/000/fff" alt="Sofá Modular" class="product-image">
+                            <h3 class="product-title">Sofá Modular</h3>
+                            <p class="product-price">$899.99</p>
+                            <button class="button">Añadir al carrito</button>
+                        </div>
+                        <!-- Añade más productos aquí -->
+                    </div>
+                </div>
+            </main>
+    
+           
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Design Furniture Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
